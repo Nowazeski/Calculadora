@@ -324,7 +324,7 @@ public class JframeCalculadora extends javax.swing.JFrame {
         }else if (sinal == "dividir"){
         txtResultado.setText(String.valueOf(valor1/valor2));
         }else{ 
-        txtResultado.setText(String.valueOf(valor1%valor2));
+        txtResultado.setText(String.valueOf(valor2*(valor1/100)));
     }//GEN-LAST:event_jButtonIgualActionPerformed
    
         
