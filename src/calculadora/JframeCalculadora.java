@@ -315,13 +315,13 @@ public class JframeCalculadora extends javax.swing.JFrame {
 
     private void jButtonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIgualActionPerformed
         valor2 = Double.parseDouble(String.valueOf(txtResultado.getText()));
-        if (sinal == "soma"){
+        if (sinal.equals("soma")){
         txtResultado.setText(String.valueOf(valor1+valor2));
-        }else if (sinal == "menos"){
+        }else if (sinal.equals("menos")){
         txtResultado.setText(String.valueOf(valor1-valor2));
-        }else if(sinal == "vezes"){
+        }else if(sinal.equals("vezes")){
         txtResultado.setText(String.valueOf(valor1*valor2));
-        }else if (sinal == "dividir"){
+        }else if (sinal.equals("dividir")){
         txtResultado.setText(String.valueOf(valor1/valor2));
         }else{ 
         txtResultado.setText(String.valueOf(valor2*(valor1/100)));
